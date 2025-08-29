@@ -3,13 +3,14 @@ import SearchedList from './SearchedList'
 import SearchForm from './SearchForm'
 
 export default function SearchCardListServer() {
-  const params = new URLSearchParams(window.location.search).get('name')
+  const params = new URLSearchParams(window.location.search)
+  const queryName = params.get('name')
 
   const [users, setUsers] = useState(null)
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
 
-  const [searchValue, setSearchValue] = useState(params ?? '')
+  const [searchValue, setSearchValue] = useState(queryName)
 
   const handleInputChange = (e) => {
     setSearchValue(e.target.value)
@@ -23,7 +24,7 @@ export default function SearchCardListServer() {
     ;(async () => {
       try {
         const res = await fetch(
-          `http://localhost:4000/users${searchValue ? `?name_like=${searchValue}` : params ? `?name_like=${params}` : ``}`,
+          `http://localhost:4000/users${searchValue ? `?name_like=${searchValue}` : queryName ? `?name_like=${queryName}` : ``}`,
           {
             signal: fetchController.signal,
           },
@@ -44,7 +45,7 @@ export default function SearchCardListServer() {
     return () => {
       fetchController.abort()
     }
-  }, [searchValue, params])
+  }, [searchValue, queryName])
 
   return (
     <article className="px-10 pt-20 pb-40">
