@@ -11,8 +11,8 @@ export default function SearchedList({ users, error, loading }) {
 
   if (error) {
     return (
-      <div className="text-center">
-        <h3>{error.name}</h3>
+      <div className="text-center text-white bg-red-400 py-20">
+        <h3 className="text-4xl mb-3">{error.name}</h3>
         <p>{error.message}</p>
       </div>
     )
@@ -21,19 +21,20 @@ export default function SearchedList({ users, error, loading }) {
   return (
     <section>
       <h2 className="sr-only">유저 목록</h2>
-      <ul className="grid gap-8 grid-cols-[repeat(auto-fit,minmax(320px,1fr))]">
-        {users?.length === 0 ? (
-          <li className="text-center w-full text-2xl">
-            검색된 유저가 없습니다.
-          </li>
-        ) : (
-          users?.map((user) => (
+
+      {users?.length === 0 ? (
+        <div className="text-center w-full text-2xl">
+          검색된 유저가 없습니다.
+        </div>
+      ) : (
+        <ul className="grid gap-8 grid-cols-[repeat(auto-fit,minmax(320px,1fr))]">
+          {users?.map((user) => (
             <li key={user.id} className="max-w-[400px]">
               <Card user={user} />
             </li>
-          ))
-        )}
-      </ul>
+          ))}
+        </ul>
+      )}
     </section>
   )
 }

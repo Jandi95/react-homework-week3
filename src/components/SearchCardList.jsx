@@ -23,13 +23,13 @@ export default function SearchCardList() {
     ;(async () => {
       try {
         const res = await fetch(
-          `http://localhost:4000/users${searchValue ? `?name_like=${searchValue}` : params ? `?name_like=${params}` : ``}`,
+          `http://localhost:4000/uers${searchValue ? `?name_like=${searchValue}` : params ? `?name_like=${params}` : ``}`,
           {
             signal: fetchController.signal,
           },
         )
 
-        if (!res.ok) throw new Error('유저를 찾을 수 없습니다.')
+        if (!res.ok) throw new Error('유저 데이터를 찾을 수 없습니다.')
         const usersData = await res.json()
         setUsers(usersData)
       } catch (error) {
