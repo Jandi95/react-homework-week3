@@ -2,17 +2,31 @@ import { useEffect, useState } from 'react'
 import SearchedList from './SearchedList'
 import SearchForm from './SearchForm'
 
-export default function SearchCardListServer() {
-  const params = new URLSearchParams(window.location.search).get('name')
+export default function SearchCardListLocal() {
+  const params = new URLSearchParams(window.location.search)
+  const queryName = params.get('name') ?? ''
 
   const [users, setUsers] = useState(null)
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
 
-  const [searchValue, setSearchValue] = useState(params ?? '')
+  const [searchValue, setSearchValue] = useState(queryName)
 
   const handleInputChange = (e) => {
-    setSearchValue(e.target.value)
+    const value = e.target.value
+    setSearchValue(value)
+
+    const newParams = new URLSearchParams(window.location.search)
+    if (value) {
+      newParams.set('name', value)
+    } else {
+      newParams.delete('name')
+    }
+    window.history.replaceState(
+      {},
+      '',
+      `${window.location.pathname}?${newParams}`,
+    )
   }
 
   useEffect(() => {
@@ -22,20 +36,21 @@ export default function SearchCardListServer() {
     setError(null)
     ;(async () => {
       try {
-        const res = await fetch(
-          `http://localhost:4000/users${searchValue ? `?name_like=${searchValue}` : params ? `?name_like=${params}` : ``}`,
-          {
-            signal: fetchController.signal,
-          },
-        )
+        const res = await fetch('/user-data.json', {
+          signal: fetchController.signal,
+        })
 
         if (!res.ok) throw new Error('유저 데이터를 찾을 수 없습니다.')
         const usersData = await res.json()
-        setUsers(usersData)
-      } catch (error) {
-        if (error.name === 'AbortError') return
-        setError(error)
-        console.error(error)
+
+        const filteredData = queryName
+          ? usersData.filter((user) => user.name.includes(queryName))
+          : usersData
+
+        setUsers(filteredData)
+      } catch (err) {
+        if (err.name === 'AbortError') return
+        setError(err)
       } finally {
         setLoading(false)
       }
@@ -44,7 +59,7 @@ export default function SearchCardListServer() {
     return () => {
       fetchController.abort()
     }
-  }, [searchValue, params])
+  }, [queryName])
 
   return (
     <article className="px-10 pt-20 pb-40">
