@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import SearchedList from './SearchedList'
 import SearchForm from './SearchForm'
 
-export default function SearchCardList() {
+export default function SearchCardListServer() {
   const params = new URLSearchParams(window.location.search).get('name')
 
   const [users, setUsers] = useState(null)
@@ -23,7 +23,7 @@ export default function SearchCardList() {
     ;(async () => {
       try {
         const res = await fetch(
-          `http://localhost:4000/uers${searchValue ? `?name_like=${searchValue}` : params ? `?name_like=${params}` : ``}`,
+          `http://localhost:4000/users${searchValue ? `?name_like=${searchValue}` : params ? `?name_like=${params}` : ``}`,
           {
             signal: fetchController.signal,
           },

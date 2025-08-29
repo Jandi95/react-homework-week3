@@ -1,0 +1,442 @@
+[
+  {
+    "id": 1,
+    "name": "김민수",
+    "username": "minsoo.kim",
+    "email": "minsoo.kim@example.com",
+    "address": {
+      "street": "강남대로",
+      "suite": "101호",
+      "city": "서울",
+      "zipcode": "06236",
+      "geo": {
+        "lat": "37.4979",
+        "lng": "127.0276"
+      }
+    },
+    "phone": "010-1234-5678",
+    "company": {
+      "name": "삼성전자",
+      "catchPhrase": "혁신적인 기술 선도",
+      "business": "미래를 창조하다"
+    }
+  },
+  {
+    "id": 2,
+    "name": "이영희",
+    "username": "younghee.lee",
+    "email": "younghee.lee@example.com",
+    "address": {
+      "street": "테헤란로",
+      "suite": "202호",
+      "city": "서울",
+      "zipcode": "06134",
+      "geo": {
+        "lat": "37.5056",
+        "lng": "127.0570"
+      }
+    },
+    "phone": "010-2345-6789",
+    "company": {
+      "name": "LG화학",
+      "catchPhrase": "지속가능한 에너지",
+      "business": "친환경 솔루션 제공"
+    }
+  },
+  {
+    "id": 3,
+    "name": "박지훈",
+    "username": "jihoon.park",
+    "email": "jihoon.park@example.com",
+    "address": {
+      "street": "중앙로",
+      "suite": "303호",
+      "city": "대전",
+      "zipcode": "35220",
+      "geo": {
+        "lat": "36.3504",
+        "lng": "127.3845"
+      }
+    },
+    "phone": "010-3456-7890",
+    "company": {
+      "name": "한화",
+      "catchPhrase": "함께하는 성장",
+      "business": "미래를 위한 투자"
+    }
+  },
+  {
+    "id": 4,
+    "name": "최수정",
+    "username": "sujeong.choi",
+    "email": "sujeong.choi@example.com",
+    "address": {
+      "street": "해운대로",
+      "suite": "404호",
+      "city": "부산",
+      "zipcode": "48094",
+      "geo": {
+        "lat": "35.1667",
+        "lng": "129.0726"
+      }
+    },
+    "phone": "010-4567-8901",
+    "company": {
+      "name": "롯데",
+      "catchPhrase": "더 나은 라이프",
+      "business": "고객 중심 서비스"
+    }
+  },
+  {
+    "id": 5,
+    "name": "정우성",
+    "username": "woosung.jung",
+    "email": "woosung.jung@example.com",
+    "address": {
+      "street": "명동길",
+      "suite": "505호",
+      "city": "서울",
+      "zipcode": "04537",
+      "geo": {
+        "lat": "37.5636",
+        "lng": "126.9820"
+      }
+    },
+    "phone": "010-5678-9012",
+    "company": {
+      "name": "CJ",
+      "catchPhrase": "생활 속의 행복",
+      "business": "문화와 식품 혁신"
+    }
+  },
+  {
+    "id": 6,
+    "name": "한지민",
+    "username": "jimin.han",
+    "email": "jimin.han@example.com",
+    "address": {
+      "street": "광복로",
+      "suite": "606호",
+      "city": "부산",
+      "zipcode": "48947",
+      "geo": {
+        "lat": "35.0988",
+        "lng": "129.0302"
+      }
+    },
+    "phone": "010-6789-0123",
+    "company": {
+      "name": "신세계",
+      "catchPhrase": "새로운 쇼핑 경험",
+      "business": "고객 만족 실현"
+    }
+  },
+  {
+    "id": 7,
+    "name": "오세훈",
+    "username": "sehun.oh",
+    "email": "sehun.oh@example.com",
+    "address": {
+      "street": "청계천로",
+      "suite": "707호",
+      "city": "서울",
+      "zipcode": "03189",
+      "geo": {
+        "lat": "37.5700",
+        "lng": "126.9770"
+      }
+    },
+    "phone": "010-7890-1234",
+    "company": {
+      "name": "SK텔레콤",
+      "catchPhrase": "연결의 힘",
+      "business": "최첨단 통신 서비스"
+    }
+  },
+  {
+    "id": 8,
+    "name": "윤아름",
+    "username": "areum.yoon",
+    "email": "areum.yoon@example.com",
+    "address": {
+      "street": "서면로",
+      "suite": "808호",
+      "city": "부산",
+      "zipcode": "61463",
+      "geo": {
+        "lat": "35.1576",
+        "lng": "129.0595"
+      }
+    },
+    "phone": "010-8901-2345",
+    "company": {
+      "name": "현대자동차",
+      "catchPhrase": "미래를 향한 이동",
+      "business": "혁신적 자동차 개발"
+    }
+  },
+  {
+    "id": 9,
+    "name": "장민호",
+    "username": "minho.jang",
+    "email": "minho.jang@example.com",
+    "address": {
+      "street": "수원로",
+      "suite": "909호",
+      "city": "수원",
+      "zipcode": "16260",
+      "geo": {
+        "lat": "37.2636",
+        "lng": "127.0286"
+      }
+    },
+    "phone": "010-9012-3456",
+    "company": {
+      "name": "네이버",
+      "catchPhrase": "정보의 중심",
+      "business": "스마트 플랫폼 제공"
+    }
+  },
+  {
+    "id": 10,
+    "name": "송지효",
+    "username": "jihyo.song",
+    "email": "jihyo.song@example.com",
+    "address": {
+      "street": "판교로",
+      "suite": "1010호",
+      "city": "성남",
+      "zipcode": "13529",
+      "geo": {
+        "lat": "37.3947",
+        "lng": "127.1107"
+      }
+    },
+    "phone": "010-0123-4567",
+    "company": {
+      "name": "카카오",
+      "catchPhrase": "소통의 혁신",
+      "business": "모바일 플랫폼 선도"
+    }
+  },
+  {
+    "id": 11,
+    "name": "백현진",
+    "username": "hyunjin.baek",
+    "email": "hyunjin.baek@example.com",
+    "address": {
+      "street": "동래로",
+      "suite": "1111호",
+      "city": "부산",
+      "zipcode": "47785",
+      "geo": {
+        "lat": "35.2052",
+        "lng": "129.0836"
+      }
+    },
+    "phone": "010-1234-5670",
+    "company": {
+      "name": "한진",
+      "catchPhrase": "물류 혁신",
+      "business": "글로벌 네트워크 구축"
+    }
+  },
+  {
+    "id": 12,
+    "name": "임다영",
+    "username": "dayoung.lim",
+    "email": "dayoung.lim@example.com",
+    "address": {
+      "street": "광명로",
+      "suite": "1212호",
+      "city": "광명",
+      "zipcode": "14304",
+      "geo": {
+        "lat": "37.4772",
+        "lng": "126.8666"
+      }
+    },
+    "phone": "010-2345-6701",
+    "company": {
+      "name": "포스코",
+      "catchPhrase": "강철의 미래",
+      "business": "첨단 소재 개발"
+    }
+  },
+  {
+    "id": 13,
+    "name": "노지훈",
+    "username": "jihoon.no",
+    "email": "jihoon.no@example.com",
+    "address": {
+      "street": "울산로",
+      "suite": "1313호",
+      "city": "울산",
+      "zipcode": "44787",
+      "geo": {
+        "lat": "35.5384",
+        "lng": "129.3114"
+      }
+    },
+    "phone": "010-3456-7012",
+    "company": {
+      "name": "현대중공업",
+      "catchPhrase": "산업의 혁신",
+      "business": "글로벌 조선 리더"
+    }
+  },
+  {
+    "id": 14,
+    "name": "서지수",
+    "username": "jisu.seo",
+    "email": "jisu.seo@example.com",
+    "address": {
+      "street": "송도로",
+      "suite": "1414호",
+      "city": "인천",
+      "zipcode": "21999",
+      "geo": {
+        "lat": "37.3826",
+        "lng": "126.6434"
+      }
+    },
+    "phone": "010-4567-0123",
+    "company": {
+      "name": "인천공항",
+      "catchPhrase": "세계로 가는 관문",
+      "business": "공항 서비스 혁신"
+    }
+  },
+  {
+    "id": 15,
+    "name": "황보경",
+    "username": "bokyung.hwang",
+    "email": "bokyung.hwang@example.com",
+    "address": {
+      "street": "경희로",
+      "suite": "1515호",
+      "city": "서울",
+      "zipcode": "02447",
+      "geo": {
+        "lat": "37.5982",
+        "lng": "127.0518"
+      }
+    },
+    "phone": "010-5678-1234",
+    "company": {
+      "name": "경희대",
+      "catchPhrase": "교육의 미래",
+      "business": "글로벌 인재 양성"
+    }
+  },
+  {
+    "id": 16,
+    "name": "신유진",
+    "username": "yujin.shin",
+    "email": "yujin.shin@example.com",
+    "address": {
+      "street": "분당로",
+      "suite": "1616호",
+      "city": "성남",
+      "zipcode": "13560",
+      "geo": {
+        "lat": "37.3851",
+        "lng": "127.1215"
+      }
+    },
+    "phone": "010-6789-2345",
+    "company": {
+      "name": "분당서울대병원",
+      "catchPhrase": "건강한 삶의 동반자",
+      "business": "첨단 의료 서비스"
+    }
+  },
+  {
+    "id": 17,
+    "name": "권민재",
+    "username": "minjae.kwon",
+    "email": "minjae.kwon@example.com",
+    "address": {
+      "street": "동탄대로",
+      "suite": "1717호",
+      "city": "화성",
+      "zipcode": "18469",
+      "geo": {
+        "lat": "37.2085",
+        "lng": "127.0736"
+      }
+    },
+    "phone": "010-7890-3456",
+    "company": {
+      "name": "동탄신도시",
+      "catchPhrase": "미래 도시 구현",
+      "business": "스마트 시티 구축"
+    }
+  },
+  {
+    "id": 18,
+    "name": "문지현",
+    "username": "jihyun.moon",
+    "email": "jihyun.moon@example.com",
+    "address": {
+      "street": "광주로",
+      "suite": "1818호",
+      "city": "광주",
+      "zipcode": "61475",
+      "geo": {
+        "lat": "35.1595",
+        "lng": "126.8526"
+      }
+    },
+    "phone": "010-8901-4567",
+    "company": {
+      "name": "광주은행",
+      "catchPhrase": "신뢰의 금융",
+      "business": "지역 경제 활성화"
+    }
+  },
+  {
+    "id": 19,
+    "name": "조현우",
+    "username": "hyunwoo.jo",
+    "email": "hyunwoo.jo@example.com",
+    "address": {
+      "street": "창원로",
+      "suite": "1919호",
+      "city": "창원",
+      "zipcode": "51430",
+      "geo": {
+        "lat": "35.2285",
+        "lng": "128.6811"
+      }
+    },
+    "phone": "010-9012-5678",
+    "company": {
+      "name": "창원산업단지",
+      "catchPhrase": "산업의 중심지",
+      "business": "첨단 제조업 발전"
+    }
+  },
+  {
+    "id": 20,
+    "name": "이하늘",
+    "username": "haneul.lee",
+    "email": "haneul.lee@example.com",
+    "address": {
+      "street": "제주로",
+      "suite": "2020호",
+      "city": "제주",
+      "zipcode": "63092",
+      "geo": {
+        "lat": "33.4996",
+        "lng": "126.5312"
+      }
+    },
+    "phone": "010-0123-6789",
+    "company": {
+      "name": "제주관광공사",
+      "catchPhrase": "아름다운 제주",
+      "business": "관광 산업 혁신"
+    }
+  }
+]

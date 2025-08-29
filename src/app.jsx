@@ -1,5 +1,5 @@
-import SearchCardList from './components/SearchCardList'
+import SearchCardListServer from './components/SearchCardListServer'
 
 export default function App() {
-  return <SearchCardList />
+  return <SearchCardListServer />
 }
