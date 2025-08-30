@@ -5,7 +5,7 @@ export default function Card({ user }) {
     <div
       role="button"
       tabIndex={0}
-      className="group p-2 bg-[#2e2e2e] w-full rounded-4xl transition-shadow shadow-md hover:shadow-xl focus:outline-0 focus:shadow-xl"
+      className="group p-2 bg-[#2e2e2e] w-full rounded-4xl transition-shadow shadow-md hover:shadow-xl focus:outline-0 focus:shadow-xl cursor-pointer"
     >
       <figure>
         <img
